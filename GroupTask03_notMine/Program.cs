@@ -5,14 +5,18 @@ int count = -number;
 if (number >= 0)
 while (count <= number)
 {
-    Console.Write(count + " ");
+    Console.Write($"{count} ");
     count++;
 }
-else
+else 
 {
-    while (count >= number)
-    {
-        Console.Write(count + " ");
-        count--;
-    }
+    Console.Write("Уважаемый пользователь, вы ввели некорректное число!");
 }
+// else
+// {
+//     while (count >= number)
+//     {
+//         Console.Write(count + " ");
+//         count--;
+//     }
+// }
