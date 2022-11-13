@@ -5,14 +5,14 @@ int count = -number;
 if (number >= 0)
 while (count <= number)
 {
-    Console.WriteLine(count);
+    Console.Write(count + " ");
     count++;
 }
 else
 {
     while (count >= number)
     {
-        Console.WriteLine(count);
+        Console.Write(count + " ");
         count--;
     }
 }
