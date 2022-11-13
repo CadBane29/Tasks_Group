@@ -1,0 +1,18 @@
+﻿// Напишите программу, которая на вход принимает одно число (N), а  на выходе показывает все целые числа в промежутке от -N до N.
+Console.WriteLine("Введите число");
+int number = Convert.ToInt32(Console.ReadLine());
+int count = -number;
+if (number >= 0)
+while (count <= number)
+{
+    Console.WriteLine(count);
+    count++;
+}
+else
+{
+    while (count >= number)
+    {
+        Console.WriteLine(count);
+        count--;
+    }
+}
