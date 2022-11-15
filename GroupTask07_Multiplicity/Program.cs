@@ -14,4 +14,4 @@ bool Multiplicity(int num1)
     return (num1 % 7 == 0) && (num1 % 23 == 0);
 }
 bool result = Multiplicity(number);
-Console.Write(result ? "Multiplicity" : "Not Multiplicity");
+Console.Write(result ? "Yes, Multiplicity" : "Not, no multiplicity");
