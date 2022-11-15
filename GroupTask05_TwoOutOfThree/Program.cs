@@ -19,4 +19,6 @@ int RemoveSecondDigit(int num)
 
 // int removeSecondDigit = RemoveSecondDigit(number);
 // Console.Write($"Output of number {removeSecondDigit}");
-Console.Write($"Output of number --> {RemoveSecondDigit(number)}");
+//Console.Write($"Output of number --> {RemoveSecondDigit(number)}");
+int removeSecondDigit = RemoveSecondDigit(number);
+Console.Write($"Output of number {removeSecondDigit}");
