@@ -16,22 +16,23 @@
             {
                 time = distance / (firstFriendSpeed + dogSpeed);
                 friend = 2;
-                distance = distance - (firstFriendSpeed + secondFriendSpeed) * time;
+                //distance = distance - (firstFriendSpeed + secondFriendSpeed) * time;
                 count = count + 1;
 
             }
-            Console.WriteLine("second" + count);
+            Console.WriteLine($"From second friend {count}");
 
             if (friend == 2)
 
             {
                 time = distance / (secondFriendSpeed + dogSpeed);
                 friend = 1;
-                distance = distance - (firstFriendSpeed + secondFriendSpeed) * time;
+                //distance = distance - (firstFriendSpeed + secondFriendSpeed) * time;
                 count = count + 1;
                 //Console.WriteLine(count);
             }
-            Console.WriteLine("First" + count);
+            Console.WriteLine($"From first friend {count}");
+        distance = distance - (firstFriendSpeed + secondFriendSpeed) * time;   
         }
         Console.WriteLine(count);
     }
