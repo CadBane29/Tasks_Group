@@ -8,10 +8,12 @@
 
 Console.WriteLine("User, please enter number.");
 int number = Convert.ToInt32(Console.ReadLine());
+int seven = 7;
+int twentyThree = 23;
 
-bool Multiplicity(int num1)
+bool Multiplicity(int num1, int num2, int  num3)
 {
-    return (num1 % 7 == 0) && (num1 % 23 == 0);
+    return (num1 % num2 == 0) && (num1 % num3 == 0);
 }
-bool result = Multiplicity(number);
-Console.Write(result ? "Yes, Multiplicity" : "Not, no multiplicity");
+bool result = Multiplicity(number, seven, twentyThree);
+Console.Write(result ? "Yes, Multiple." : "No, not multiple times.");
