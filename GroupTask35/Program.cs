@@ -35,7 +35,7 @@ PrintArray(array);
 
 int FindElementArray(int[] array)
 {
-    int count = 0;
+    int count = 0; // создаем счетчик в котором мы будем счиать все числа из нашего интервала
     for (int i = 0; i < array.Length; i++)
     {
         if (array[i] > 9 && array[i] < 100) count++;
