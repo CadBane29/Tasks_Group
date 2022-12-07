@@ -32,11 +32,10 @@ void PrintMatrix(int[,] matrix)
 }
 
 void ReplacingStringMatrix(int[,] matrix)
-{
-    int variable = 0;
+{    
     for (int i = 0; i < matrix.GetLength(1); i++)
     {
-        variable = matrix[0, i];
+        int variable = matrix[0, i];
         matrix[0, i] = matrix[matrix.GetLength(0) - 1, i];
         matrix[matrix.GetLength(0) - 1, i] = variable;
     }
@@ -46,4 +45,4 @@ int[,] matrix = CreateMatrixRndInt(3, 4, -10, 10);
 PrintMatrix(matrix);
 Console.WriteLine();
 ReplacingStringMatrix(matrix);
-PrintMatrix(matrix);
+PrintMatrix(matrix); 
